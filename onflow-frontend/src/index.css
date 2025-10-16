@@ -1,68 +1,57 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --background: 210 55% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 45% 18%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 45% 18%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 70 70% 55%;
+    --primary-foreground: 210 50% 15%;
+
+    --secondary: 210 40% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 35% 22%;
+    --muted-foreground: 70 30% 65%;
+
+    --accent: 70 70% 55%;
+    --accent-foreground: 210 50% 15%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 40% 25%;
+    --input: 210 40% 25%;
+    --ring: 70 70% 55%;
+
+    --radius: 0.75rem;
+
+    --chart-1: 70 70% 55%;
+    --chart-2: 210 50% 40%;
+    --chart-3: 70 50% 45%;
+    --chart-4: 210 45% 35%;
+    --chart-5: 70 60% 60%;
   }
-  a:hover {
-    color: #747bff;
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
-  button {
-    background-color: #f9f9f9;
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
