@@ -5,6 +5,16 @@ It analyzes user behaviour, predicts intent, and dynamically adjusts onboarding 
 
 ---
 
+##🧍 Team Members
+
+| Name | Role | Responsibilities |
+|------|------|-----------------|
+| [@shashankdurgad](https://github.com/shashankdurgad) | Frontend | Lovable, Vite |
+| [@lucasucal]([https://github.com/lucasucal)  | Frontend | Lovable, Vite |
+| [@w3joe]([https://github.com/w3joe) | Backend | Supabase |
+
+---
+
 ## 🧩 Problem
 
 SaaS product owners struggle to keep new users engaged after signup.  
@@ -60,3 +70,4 @@ These metrics help SaaS teams pinpoint bottlenecks and instantly test new onboar
 | **SDK** | JavaScript (plug-and-play snippet) |
 | **AI Layer** | Lightweight intent predictor (FastAPI / TensorFlow Lite) |
 | **Deployment** | Netlify + Supabase Edge Functions |
+
