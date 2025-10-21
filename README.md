@@ -5,7 +5,7 @@ It analyzes user behaviour, predicts intent, and dynamically adjusts onboarding 
 
 ---
 
-##🧍 Team Members
+## 🧍 Team Members
 
 | Name | Role | Responsibilities |
 |------|------|-----------------|
@@ -70,5 +70,6 @@ These metrics help SaaS teams pinpoint bottlenecks and instantly test new onboar
 | **SDK** | JavaScript (plug-and-play snippet) |
 | **AI Layer** | Lightweight intent predictor (FastAPI / TensorFlow Lite) |
 | **Deployment** | Netlify + Supabase Edge Functions |
+
 
 
